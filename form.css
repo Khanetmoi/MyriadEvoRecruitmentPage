@@ -1,0 +1,119 @@
+/* Container */
+#apply {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #f3f4f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Headings */
+#apply h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+#apply h3 {
+  margin-top: 2rem;
+  color: #374151;
+}
+
+/* Form inputs */
+#contribForm input[type="text"],
+#contribForm input[type="email"],
+#contribForm input[type="number"],
+#contribForm input[type="url"],
+#contribForm select,
+#contribForm textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e0;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#contribForm input[type="number"] {
+  margin-bottom: 0.5rem;
+}
+
+#contribForm label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Checkbox */
+#contribForm .consent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #4338ca;
+}
+
+
+/* ===== Modal Overlay ===== */
+.modal {
+  display: none;            /* hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+/* ===== Modal Box ===== */
+.modal-content {
+  background: #f3f4f6;
+  margin: 4rem auto;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(-10px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+/* ===== Close Button ===== */
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Reuse your existing form styles (inputs, buttons) */

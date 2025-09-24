@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Myriad Evo — Employee Handbook (Full)</title>
+  <meta name="description" content="Full employee handbook for Myriad Evo: onboarding, policies, workflows, rewards, and culture." />
+  <style>
+    :root{
+      --blue:#0b5ed7;
+      --orange:#ff7a1a;
+      --navy:#06223a;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --radius:12px;
+      --glass: rgba(255,255,255,0.6);
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:#f5f8fb;color:var(--navy);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max-width);margin:28px auto;padding:22px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:60px;height:60px;border-radius:10px;background:linear-gradient(135deg,var(--blue),#1368ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:22px;box-shadow:0 8px 30px rgba(11,94,215,0.12)}
+    h1{font-size:26px;margin:0}
+    .subtitle{color:var(--muted);margin-top:6px}
+
+    .layout{display:grid;grid-template-columns:280px 1fr;gap:20px;margin-top:18px}
+    nav.card{position:sticky;top:20px;height:calc(100vh - 40px);overflow:auto;padding:18px}
+    main.card{padding:22px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 24px rgba(12,32,64,0.06)}
+
+    nav h3{margin:0 0 10px}
+    nav ul{list-style:none;padding:0;margin:0}
+    nav li{margin:8px 0}
+    nav a{color:var(--blue);text-decoration:none;font-weight:600}
+    nav a.small{font-weight:500;color:var(--muted);font-size:14px}
+
+    section h2{color:var(--orange);margin-top:0}
+    section p{line-height:1.5;color:var(--navy)}
+    .muted{color:var(--muted)}
+
+    .row{display:flex;gap:12px}
+    .col{flex:1}
+
+    .panel{border:1px solid rgba(10,20,40,0.04);padding:12px;border-radius:10px;margin:12px 0}
+
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .badge{padding:8px;border-radius:8px;background:linear-gradient(90deg, rgba(11,94,215,0.06), rgba(255,122,26,0.04));font-weight:600}
+
+    details{margin:8px 0;padding:10px;border-radius:8px;background:#fbfdff}
+    summary{font-weight:700}
+
+    .toc-action{display:flex;gap:8px;margin-top:12px}
+    .btn{background:var(--blue);color:white;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;border:none;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(11,94,215,0.12);color:var(--blue)}
+
+    footer{margin-top:20px;padding:12px;text-align:center;color:var(--muted);font-size:13px}
+
+    pre{background:#0b1220;color:#dbeafe;padding:12px;border-radius:8px;overflow:auto}
+
+    /* print */
+    @media print{body{background:white}nav.card{display:none}.wrap{margin:0;padding:0}main.card{box-shadow:none;border-radius:0;padding:0}}
+
+    @media (max-width:880px){
+      .layout{grid-template-columns:1fr}
+      nav.card{position:static;height:auto}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">ME</div>
+      <div>
+        <h1>Myriad Evo — Employee Handbook</h1>
+        <div class="subtitle">Full guide for workers: onboarding, pay, idea workflow, conduct, and growth.</div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="card">
+        <h3>On this page</h3>
+        <ul>
+          <li><a href="#welcome">Welcome & Mission</a></li>
+          <li><a href="#onboarding">Onboarding & First 6 Months</a></li>
+          <li><a href="#work-models">Work Models & How We Operate</a></li>
+          <li><a href="#ideas">Ideas & Feature Workflow</a></li>
+          <li><a href="#payments">Payments & Revenue Sharing</a></li>
+          <li><a href="#growth">Growth Path & Reviews</a></li>
+          <li><a href="#culture">Culture & Code of Collaboration</a></li>
+          <li><a href="#tools">Operations & Tools</a></li>
+          <li><a href="#disputes">Conflict Resolution</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+
+        <div class="toc-action">
+          <button class="btn" id="printBtn">Print / Save PDF</button>
+          <button class="btn ghost" id="downloadHtml">Download HTML</button>
+        </div>
+      </nav>
+
+      <main class="card" id="content">
+        <section id="welcome">
+          <h2>1. Welcome & Mission</h2>
+          <p><strong>Welcome to Myriad Evo.</strong> We’re a team focused on producing more <strong>sales, engagement, and visibility</strong> for every client we serve. We do this through three pillars: <strong>Innovation</strong> (new ways to grow), <strong>Scalability</strong> (solutions that expand), and <strong>Impact</strong> (measurable results).</p>
+          <p class="muted">This handbook is written for workers and recruits. It explains what we expect, how you’ll be evaluated, and how you earn — while pointing to the full partner/investor handbook for strategic context.</p>
+        </section>
+
+        <section id="onboarding">
+          <h2>2. Onboarding & First 6 Months</h2>
+          <p><strong>Target group:</strong> students and early-career talents who learn fast and align with our mission.</p>
+
+          <div class="panel">
+            <strong>What to expect in your first week</strong>
+            <ul>
+              <li>Welcome call with your recruiter and lead.</li>
+              <li>Account setup: Notion, Trello, Airtable, GitHub access.</li>
+              <li>Receive 2–3 small tasks (learn-by-doing).</li>
+              <li>Assigned a mentor for questions and feedback.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <strong>First 6 months</strong>
+            <ul>
+              <li>Task-based pay only (details in Payments section).</li>
+              <li>Frequent feedback cycles — weekly check-ins for month 1, then biweekly.</li>
+              <li>Encouraged to submit ideas from day 1.</li>
+              <li>End-of-6-months review determines eligibility for permanent contract.</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section id="work-models">
+          <h2>3. Work Models & How We Operate</h2>
+          <p>There are two main ways we deliver value:</p>
+          <ol>
+            <li><strong>Existing Clients (Continuous Improvement)</strong> — we already delivered a project and now improve it over time. Partners and workers propose features, implement, and get rewarded.</li>
+            <li><strong>New Clients (Fresh Projects)</strong> — we analyze needs, create a roadmap broken into features, and publish features internally for implementation.</li>
+          </ol>
+
+          <div class="grid-3" style="margin-top:12px">
+            <div class="badge">Basic</div>
+            <div class="badge">Gold</div>
+            <div class="badge">Premium</div>
+          </div>
+
+          <p class="muted" style="margin-top:6px">Categories explain how a feature is paid and promoted. Basic features are maintenance-level; Gold is visible and easy to sell; Premium are game-changers.</p>
+        </section>
+
+        <section id="ideas">
+          <h2>4. Ideas & Feature Workflow</h2>
+          <p>We value ideas. To keep things fair and fast, follow this workflow:</p>
+
+          <h3>Step A — Submission</h3>
+          <p>Submit a short pitch (1–3 lines) describing the idea and expected impact. If possible, upload a small prototype, screenshots, or a mock.</p>
+
+          <h3>Step B — Review</h3>
+          <p>The review team evaluates viability, alignment with sales/engagement/visibility, and technical feasibility. Ideas are categorized (Basic/Gold/Premium) and given a priority.</p>
+
+          <h3>Step C — Implementation</h3>
+          <p>Ideas become public in the internal task board. Any team member can request to implement. Multiple implementations are allowed; the best one wins. Contributions are tracked in the partner ledger.</p>
+
+          <h3>Step D — Client Pitch</h3>
+          <p>The agency chooses whether to pitch to the client. If the client approves, the feature is sold and payments are distributed per the Payments section.</p>
+
+          <h3>Step E — Recognition</h3>
+          <p>If your idea is not chosen, you still receive documented credit. If your implementation is not selected, you may receive recognition credits depending on the review.</p>
+        </section>
+
+        <section id="payments">
+          <h2>5. Payments & Revenue Sharing</h2>
+          <p>Clear rules keep rewards fair. Payments are logged and visible to affected contributors.</p>
+
+          <div class="panel">
+            <strong>Default split (when feature is purchased by client):</strong>
+            <ul>
+              <li>Idea author(s): 30%</li>
+              <li>Executor(s): 70%</li>
+              <li>If the same person(s) did both: 100%</li>
+            </ul>
+          </div>
+
+          <p><strong>Basic features:</strong> paid from maintenance fees or retainer pools.</p>
+          <p><strong>Gold & Premium features:</strong> paid when the client purchases the feature. Percentages above apply.</p>
+
+          <h4>Payment cadence & method</h4>
+          <ul>
+            <li>Payments are made monthly in the local currency agreed in your onboarding.</li>
+            <li>All payouts are logged and visible in the operations dashboard.</li>
+            <li>Taxes and local legal deductions are the responsibility of the worker unless otherwise specified in a contract.</li>
+          </ul>
+        </section>
+
+        <section id="growth">
+          <h2>6. Growth Path & Reviews</h2>
+          <p>We want people to grow with us. Growth steps:</p>
+          <ul>
+            <li>Continuous feedback & mentoring.</li>
+            <li>6-month formal review covering: task contributions, code quality, ideas, reliability, and client impact.</li>
+            <li>Top performers offered permanent roles with base salary + revenue sharing.</li>
+          </ul>
+
+          <details>
+            <summary>What we measure in reviews</summary>
+            <ul>
+              <li>Delivery: how consistently do you finish tasks on time?</li>
+              <li>Quality: code & design standards, testing, maintainability.</li>
+              <li>Ideas: number and quality of ideas submitted and their impact.</li>
+              <li>Collaboration: communication, mentoring, and teamwork.</li>
+            </ul>
+          </details>
+        </section>
+
+        <section id="culture">
+          <h2>7. Culture & Code of Collaboration</h2>
+          <p>Culture is how we work every day. Key rules:</p>
+          <ul>
+            <li><strong>Respect:</strong> communicate professionally and respectfully.</li>
+            <li><strong>Transparency:</strong> all submissions, reviews, and payments are logged.</li>
+            <li><strong>No sabotage:</strong> no theft of work, no sabotage, no personal attacks.</li>
+            <li><strong>Credit & ownership:</strong> ideas become agency property on submission, but authors always keep credit and share.</li>
+            <li><strong>Help others:</strong> mentoring and code reviews are encouraged.</li>
+          </ul>
+
+          <div class="panel">
+            <strong>Consequences</strong>
+            <p>Repeated violations of conduct policies may result in removal from the partner program or termination of contracts. Formal steps include warning, remediation, and, if needed, removal.</p>
+          </div>
+        </section>
+
+        <section id="tools">
+          <h2>8. Operations & Tools</h2>
+          <p>Early-stage tools (what you'll use today): Notion, Airtable, Trello, GitHub Issues. These track ideas, features, payments, and partner stats.</p>
+
+          <h3>How we track work</h3>
+          <ol>
+            <li>Ideas are filed in <em>Ideas Board</em> with short pitch + attachments.</li>
+            <li>Roadmaps and features live in the <em>Project Roadmap</em>.</li>
+            <li>Implementations are open tasks in GitHub Issues or task-board.</li>
+            <li>Payments and partner history are logged in Airtable/ledger.</li>
+          </ol>
+
+          <p class="muted">Long term: we will develop an internal platform with AI-assisted review and automation to speed categorization, dispute resolution, and payments.</p>
+        </section>
+
+        <section id="disputes">
+          <h2>9. Conflict Resolution & Fairness</h2>
+          <p>We aim for transparent, documented decisions.</p>
+
+          <h3>9.1 Categorization disputes</h3>
+          <p>If you feel your idea was undervalued, you can appeal. Appeals are reviewed by the lead examiner and optionally by AI-assisted analysis. The final decision is binding and documented with reasons.</p>
+
+          <h3>9.2 Execution disputes</h3>
+          <p>Competing implementations are judged on quality, scalability, and alignment. The chosen solution is published with a summary of the decision. Non-chosen contributors may receive recognition credits.</p>
+
+          <h3>9.3 Idea ownership</h3>
+          <p>On submission, ideas become agency property. Authors retain credit and share rights (30%) if implemented, even if someone else executes the work.</p>
+
+          <h3>9.4 Transparency</h3>
+          <p>All decisions, reviews and payments are recorded. Your partner history is accessible to you in the operations dashboard.</p>
+        </section>
+
+        <section id="faqs">
+          <h2>10. FAQs</h2>
+          <details>
+            <summary>Q: How do I get paid for small bug fixes?</summary>
+            <p>A: Small bug fixes are generally part of maintenance and paid from maintenance pools. If a fix is sold as a feature, it follows the idea/execution split.</p>
+          </details>
+
+          <details>
+            <summary>Q: Can I work on my own projects while partnered?</summary>
+            <p>A: Usually yes, but inform your lead if there is potential competition with Myriad Evo clients or IP. We expect transparency.</p>
+          </details>
+
+          <details>
+            <summary>Q: Who owns the IP I write?</summary>
+            <p>A: Work done for Myriad Evo is owned by the agency once delivered under contract. Exceptions and specifics will be written in your contract.</p>
+          </details>
+
+          <details>
+            <summary>Q: How do I appeal a payment decision?</summary>
+            <p>A: File an appeal using the internal appeals form. The lead examiner will review, and you will receive documented reasoning.</p>
+          </details>
+        </section>
+
+        <section id="contacts">
+          <h2>11. Contacts</h2>
+          <p>Reach out to your recruiter or team lead for onboarding questions. Use the operations channel for payments / ledger questions and the #ideas channel for pitches and prototypes.</p>
+
+          <div class="grid-3" style="margin-top:10px">
+            <div>
+              <strong>Recruiter</strong>
+              <div class="muted">recruiter@myriadevo.example</div>
+            </div>
+            <div>
+              <strong>Operations</strong>
+              <div class="muted">ops@myriadevo.example</div>
+            </div>
+            <div>
+              <strong>Lead Examiner</strong>
+              <div class="muted">lead@myriadevo.example</div>
+            </div>
+          </div>
+        </section>
+
+        <footer style="margin-top:18px;color:var(--muted)">
+          Myriad Evo — Innovation • Scalability • Impact
+        </footer>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('nav a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+
+    // Print / Save PDF
+    document.getElementById('printBtn').addEventListener('click', ()=>{
+      window.print();
+    });
+
+    // Download full page as HTML
+    document.getElementById('downloadHtml').addEventListener('click', ()=>{
+      const html = '<!doctype html><html lang="en">' + document.documentElement.outerHTML;
+      const blob = new Blob([html], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'myriad-evo-employee-handbook.html';
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>

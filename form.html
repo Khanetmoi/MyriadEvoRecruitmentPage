@@ -1,0 +1,63 @@
+<section id="apply">
+  <h2>Contributor Application Form</h2>
+  <form id="contribForm">
+    
+    <label>Full Name*</label><br>
+    <input type="text" name="name" required><br>
+
+    <label>Email*</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>Phone</label><br>
+    <input type="text" name="phone"><br>
+
+    <label>Background*</label><br>
+    <select name="background" required>
+      <option value="">Select...</option>
+      <option value="student">Student</option>
+      <option value="self-taught">Self-Taught</option>
+      <option value="professional">Professional</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <label>Availability (hours/week)*</label><br>
+    <input type="number" name="availability" min="1" max="60" required><br>
+
+    <label>Motivation: Why do you want to join Myriad Evo?*</label><br>
+    <textarea name="motivation" required rows="4"></textarea><br>
+
+    <h3>Technical Skills (0 = None, 5 = Expert)</h3>
+
+    <label>Git & GitHub</label><br>
+    <input type="number" name="git" min="0" max="5" required><br>
+
+    <label>HTML, CSS, JS</label><br>
+    <input type="number" name="frontend" min="0" max="5" required><br>
+
+    <label>React.js</label><br>
+    <input type="number" name="react" min="0" max="5" required><br>
+
+    <label>Node.js / Express.js</label><br>
+    <input type="number" name="node" min="0" max="5" required><br>
+
+    <label>Three.js</label><br>
+    <input type="number" name="three" min="0" max="5" required><br>
+
+    <label>Django (optional)</label><br>
+    <input type="number" name="django" min="0" max="5"><br>
+
+    <h3>Previous Projects / Experience</h3>
+    <label>Portfolio / GitHub Link</label><br>
+    <input type="url" name="portfolio"><br>
+
+    <label>Describe relevant projects</label><br>
+    <textarea name="projects" rows="3"></textarea><br>
+
+    <label class="consent">
+      <input type="checkbox" name="consent" required>
+      I agree to follow Myriad Evo's Contributor Handbook
+    </label><br><br>
+
+    <button type="submit" class="submit-btn">Submit Application</button>
+  </form>
+</section>
