@@ -20,6 +20,15 @@
         </div>
       </div>
     </header>
+    <section class="countdown">
+  <h2>Inscription closes in:</h2>
+  <div id="timer">
+    <span id="days">00</span>d :
+    <span id="hours">00</span>h :
+    <span id="minutes">00</span>m :
+    <span id="seconds">00</span>s
+  </div>
+</section
 
     <section class="timeline" aria-label="Onboarding process">
       <div class="step">
@@ -140,5 +149,42 @@
   
 
 <script src="form.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // ⚡️Set the REAL closing date (UTC or your local zone)
+  const inscriptionEnd = new Date("2025-10-14T23:59:59"); // <-- change if needed
+
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
+  const secondsEl = document.getElementById("seconds");
+
+  function updateTimer() {
+    const now = new Date();
+    const distance = inscriptionEnd - now;
+
+    if (distance <= 0) {
+      document.getElementById("timer").textContent = "Inscription Closed";
+      clearInterval(interval);
+      return;
+    }
+
+    const days    = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    daysEl.textContent    = String(days).padStart(2,"0");
+    hoursEl.textContent   = String(hours).padStart(2,"0");
+    minutesEl.textContent = String(minutes).padStart(2,"0");
+    secondsEl.textContent = String(seconds).padStart(2,"0");
+  }
+
+  updateTimer();                   // initial calculation
+  const interval = setInterval(updateTimer, 1000);
+});
+</script>
+
+
 </body>
 </html>

@@ -10,6 +10,27 @@
   .hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
   .brand{width:84px;height:84px;border-radius:16px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#fff;box-shadow:0 8px 30px rgba(12,8,40,0.6)}
   .hero-text{flex:1;min-width:260px}
+  .countdown {
+  text-align: center;
+  background: #1e3a8a;
+  color: #fff;
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.countdown h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#timer {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
   h1{margin:0;font-size:28px}
   p.lead{margin:8px 0;color:var(--muted)}
   .ctas{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
