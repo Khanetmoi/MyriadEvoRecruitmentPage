@@ -57,6 +57,7 @@ document.getElementById("contribForm").addEventListener("submit", function(e){
   .then(data => {
     alert("✅ Application submitted successfully!");
     document.getElementById("contribForm").reset();
+    window.location.href = 'thanks.html';
   })
   .catch(err => {
     alert("❌ Something went wrong. Try again.");

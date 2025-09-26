@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Application Received – Myriad Evo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background: #f3f4f6;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+
+  .thankyou-card {
+    background: #ffffff;
+    max-width: 550px;
+    width: 100%;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    animation: fadeIn 0.4s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .thankyou-card h1 {
+    color: #1e3a8a;
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+  }
+
+  .thankyou-card p {
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .check-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    background: #4f46e5;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+  }
+
+  .btn-home {
+    background: #4f46e5;
+    color: white;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s ease;
+  }
+  .btn-home:hover {
+    background: #4338ca;
+  }
+
+  .small {
+    display: block;
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+</style>
+</head>
+<body>
+
+  <div class="thankyou-card">
+    <div class="check-icon">✔</div>
+    <h1>Thank You!</h1>
+    <p>
+      Your application has been successfully submitted.<br>
+      You will receive a confirmation email shortly with next steps.
+    </p>
+
+    <a href="index.html" class="btn-home">Return to Home</a>
+    <span class="small">Need help? Contact <a href="mailto:support@myriadevo.com">support@myriadevo.com</a></span>
+  </div>
+
+</body>
+</html>
