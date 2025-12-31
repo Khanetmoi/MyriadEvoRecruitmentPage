@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Join Myriad Evo — Contributors</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <main class="wrap" role="main">
+    <header class="hero">
+      <div class="brand">ME</div>
+      <div class="hero-text">
+        <h1>Join Myriad Evo — contributor network</h1>
+        <p class="lead">We recruit fast learners and creative implementers. No prior experience required — we value execution and curiosity. Start with training, then move to real projects and grow into permanent roles.</p>
+        <div class="ctas">
+          <a class="btn btn-apply" href="#apply">Apply Now</a>
+          <a class="btn btn-handbook" target="_blank" href="handbook.html">Read the Handbook</a>
+        </div>
+      </div>
+    </header>
+    <section class="countdown">
+  <h2>Inscription closes in:</h2>
+  <div id="timer">
+    <span id="days">00</span>d :
+    <span id="hours">00</span>h :
+    <span id="minutes">00</span>m :
+    <span id="seconds">00</span>s
+  </div>
+</section
+
+    <section class="timeline" aria-label="Onboarding process">
+      <div class="step">
+        <h4>Phase 0 — Training Month</h4>
+        <p>Learn our standards, workflows, and philosophy. Work only on internal exercises until we trust your quality.</p>
+      </div>
+      <div class="step">
+        <h4>Phase 1 — 6-Month Tasks</h4>
+        <p>Paid per task, practice on real client projects. Submit ideas, compete for best implementation, earn payouts.</p>
+      </div>
+      <div class="step">
+        <h4>Phase 2 — Permanent Role</h4>
+        <p>Join the core team, build innovations for clients and Myriad Evo itself. Salary + continued idea rewards.</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Ideas rewarded</h3>
+        <p>Submit improvements categorized as Basic / Gold / Premium — authors & implementers get paid.</p>
+      </div>
+      <div class="card">
+        <h3>Team innovation</h3>
+        <p>Our strongest advantage: constant employees thinking of ways to improve client products.</p>
+      </div>
+      <div class="card">
+        <h3>Growth culture</h3>
+        <p>Innovation, scalability and impact are our pillars — everything we do drives sales, engagement and visibility.</p>
+      </div>
+    </section>
+
+    <div class="banner">
+      <div>
+        <strong>How it works:</strong>
+        <span class="small">Submit idea → Review viability → Open to team → Best implementation wins → Client approves → Payout</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="btn btn-apply" href="#apply">Apply Now</a>
+        <a class="btn btn-handbook" target="_blank" href="handbook.html" >Open Handbook</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="small">Myriad Evo — Innovation • Scalability • Impact</div>
+      <div class="small">Apply placeholder: #apply</div>
+    </footer>
+  </main>
+
+  <div id="applyModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+        <section id="apply">
+  <h2>Contributor Application Form</h2>
+  <form id="contribForm" >
+    
+    <label>Full Name*</label><br>
+    <input type="text" name="name" placeholder="e.g. John Doe" required><br>
+
+    <label>Email*</label><br>
+    <input type="email" name="email" placeholder="you@example.com" required><br>
+
+    <label>Phone</label><br>
+    <input type="text" name="phone"><br>
+
+    <label>Background*</label><br>
+    <select name="background" required>
+      <option value="">Select...</option>
+      <option value="student">Student</option>
+      <option value="self-taught">Self-Taught</option>
+      <option value="professional">Professional</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <label>Availability (hours/week)*</label><br>
+    <input type="number" name="availability" min="1" max="60" required><br>
+
+    <label>Motivation: Why do you want to join Myriad Evo?*</label><br>
+    <textarea name="motivation" required rows="4"></textarea><br>
+
+    <h3>Technical Skills (0 = None, 5 = Expert)</h3>
+
+    <label>Git & GitHub</label><br>
+    <input type="number" name="git" min="0" max="5" required><br>
+
+    <label>HTML, CSS, JS</label><br>
+    <input type="number" name="frontend" min="0" max="5" required><br>
+
+    <label>React.js</label><br>
+    <input type="number" name="react" min="0" max="5" required><br>
+
+    <label>Node.js / Express.js</label><br>
+    <input type="number" name="node" min="0" max="5" required><br>
+
+    <label>Three.js</label><br>
+    <input type="number" name="three" min="0" max="5" required><br>
+
+    <label>Django (optional)</label><br>
+    <input type="number" name="django" min="0" max="5"><br>
+
+    <h3>Previous Projects / Experience</h3>
+    <label>Portfolio / GitHub Link</label><br>
+    <input type="url" name="portfolio"><br>
+
+    <label>Describe relevant projects</label><br>
+    <textarea name="projects" rows="3"></textarea><br>
+
+    <label class="consent">
+      <input type="checkbox" name="consent" required>
+      I agree to follow Myriad Evo's Contributor Handbook
+    </label><br><br>
+
+    <button type="submit" class="submit-btn" >Submit Application</button>
+  </form>
+</section>
+
+</div>
+</div>
+  
+
+<script type="module" src="form.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // ⚡️Set the REAL closing date (UTC or your local zone)
+  const inscriptionEnd = new Date("2026-01-23T23:59:59"); // <-- change if needed
+
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
+  const secondsEl = document.getElementById("seconds");
+
+  function updateTimer() {
+    const now = new Date();
+    const distance = inscriptionEnd - now;
+
+    if (distance <= 0) {
+      document.getElementById("timer").textContent = "Inscription Closed";
+      clearInterval(interval);
+      return;
+    }
+
+    const days    = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    daysEl.textContent    = String(days).padStart(2,"0");
+    hoursEl.textContent   = String(hours).padStart(2,"0");
+    minutesEl.textContent = String(minutes).padStart(2,"0");
+    secondsEl.textContent = String(seconds).padStart(2,"0");
+  }
+
+  updateTimer();                   // initial calculation
+  const interval = setInterval(updateTimer, 1000);
+});
+</script>
+
+
+</body>
+</html>

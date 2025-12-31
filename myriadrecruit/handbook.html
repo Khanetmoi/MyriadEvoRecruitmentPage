@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Myriad Evo — Partner & Client System Handbook</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed;--glass:rgba(255,255,255,0.03)}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef8;background:linear-gradient(180deg,#071126 0%, #031026 100%);}
+    .wrap{max-width:1100px;margin:36px auto;padding:28px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px);}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:62px;height:62px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 20px rgba(124,58,237,0.18)}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:4px 0 0;color:var(--muted);font-size:13px}
+
+    .controls{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+    .btn{background:var(--glass);border:1px solid rgba(255,255,255,0.03);color:#dbeafe;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#06b6d4);border:none;color:white}
+    .secondary{background:transparent;color:var(--muted);border:none}
+
+    .layout{display:grid;grid-template-columns:280px 1fr;gap:24px;margin-top:22px}
+    nav{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;height:calc(100% - 28px);}
+    nav h3{font-size:13px;margin:0 0 8px;color:var(--muted)}
+    .toc{list-style:none;padding:0;margin:0}
+    .toc li{margin-bottom:6px}
+    .toc button{width:100%;text-align:left;padding:8px;border-radius:8px;border:none;background:transparent;color:#cfe8ff;font-weight:600;cursor:pointer}
+    .toc button.active{background:rgba(255,255,255,0.02)}
+
+    article{padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));border-radius:12px;min-height:420px}
+
+    section{margin-bottom:18px}
+    section h2{font-size:16px;margin:0 0 8px}
+    section p{color:var(--muted);line-height:1.5}
+
+    .card{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-top:10px}
+    pre{background:#041229;color:#dff0ff;padding:12px;border-radius:8px;overflow:auto}
+
+    .collapsible{border-radius:8px;padding:10px;background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));margin-top:10px}
+    .row{display:flex;gap:8px;align-items:center}
+
+    .search{display:flex;gap:8px;margin-bottom:12px}
+    .input{flex:1;padding:10px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:#e6eef8}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
+
+    @media (max-width:900px){.layout{grid-template-columns:1fr;}.toc{display:flex;flex-direction:row;gap:8px;overflow:auto;padding-bottom:8px}.toc button{white-space:nowrap}}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="logo">ME</div>
+      <div>
+        <h1>Myriad Evo — Partner & Client Handbook</h1>
+        <p class="lead">A living web-doc that explains our onboarding, idea flow, payments, and fairness rules.</p>
+        <div class="controls">
+          <button class="btn" id="btnPrint">Print / Save PDF</button>
+          <button class="btn" id="btnExport">Export JSON</button>
+          <button class="btn primary" id="btnCopy">Copy Handbook</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav aria-label="Table of contents">
+        <h3>Contents</h3>
+        <div class="search">
+          <input id="q" class="input" placeholder="Search the handbook..." />
+        </div>
+        <ul class="toc">
+          <li><button data-id="mission">1. Mission & Pillars</button></li>
+          <li><button data-id="onboarding">2. Partner Onboarding</button></li>
+          <li><button data-id="models">3. Two Models of Work</button></li>
+          <li><button data-id="workflow">4. Idea & Feature Workflow</button></li>
+          <li><button data-id="growth">5. Partner Growth Path</button></li>
+          <li><button data-id="client">6. Client Communication</button></li>
+          <li><button data-id="ops">7. Operations & Tracking</button></li>
+          <li><button data-id="conflict">8. Conflict Resolution & Fairness</button></li>
+        </ul>
+      </nav>
+
+      <article id="content">
+        <section id="mission">
+          <h2>1. Mission & Pillars</h2>
+          <p>At Myriad Evo, our mission is to <strong>produce more sales, more engagement, and more visibility</strong> for every client we serve.</p>
+          <div class="card">
+            <p><strong>Pillars</strong></p>
+            <ul>
+              <li><strong>Innovation</strong> — continuously finding new ways to grow.</li>
+              <li><strong>Scalability</strong> — building solutions that adapt and expand.</li>
+              <li><strong>Impact</strong> — delivering measurable results for clients.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="onboarding">
+          <h2>2. Partner Onboarding</h2>
+          <p>Target group: <strong>students and non-experienced talents</strong>. Entry requirement: <em>learn fast, be creative, and align with our mission</em>.</p>
+          <div class="card">
+            <p><strong>First 6 months</strong> — task-based payment only. After review → possible permanent contract (base salary + revenue sharing).</p>
+          </div>
+        </section>
+
+        <section id="models">
+          <h2>3. Two Models of Work</h2>
+          <h3>Existing Clients (Continuous Improvement)</h3>
+          <p>We already delivered their project. Partners propose improvements; best implementations are pitched. Categories: Basic / Gold / Premium.</p>
+
+          <h3 style="margin-top:12px">New Clients (Fresh Projects)</h3>
+          <p>Client needs are analyzed and broken into features. Features are published internally and partners implement the best solutions.</p>
+        </section>
+
+        <section id="workflow">
+          <h2>4. Idea & Feature Workflow</h2>
+          <div class="collapsible">
+            <h3>Step A — Submission</h3>
+            <p>Idea submitted (short pitch + expected impact). Implementations encouraged before submission.</p>
+            <h3>Step B — Review</h3>
+            <p>Reviewed for viability & alignment. Categorized: Basic / Gold / Premium.</p>
+            <h3>Step C — Implementation</h3>
+            <p>Idea becomes public internally. Any partner can implement. Best implementation chosen.</p>
+            <h3>Step D — Client Pitch</h3>
+            <p>Agency pitches to client. If accepted, feature sold. If rejected, contributor still gets recognition.</p>
+            <h3>Step E — Payment</h3>
+            <p>Basic paid from maintenance. Gold/Premium paid from client feature fee. Default split: Idea 30% / Execution 70% (100% if same person).</p>
+          </div>
+        </section>
+
+        <section id="growth">
+          <h2>5. Partner Growth Path</h2>
+          <p>Evaluation after 6 months based on contributions, code quality, ideas, and client impact. Top performers offered permanent contracts and work on independent projects.</p>
+        </section>
+
+        <section id="client">
+          <h2>6. Client Communication</h2>
+          <p>We present ourselves as an <strong>innovation partner</strong> — "We continuously analyze and propose improvements. You only pay for approved features." This is our USP.</p>
+        </section>
+
+        <section id="ops">
+          <h2>7. Operations & Tracking</h2>
+          <p>Start simple: Notion / Airtable / Trello / GitHub Issues. Track submissions, implementations, payments, and partner stats. Later, build an internal platform with AI for review + automation.</p>
+        </section>
+
+        <section id="conflict">
+          <h2>8. Conflict Resolution & Fairness</h2>
+          <div class="card">
+            <h4>8.1 Categorization Disputes</h4>
+            <p>Partners may appeal once. Lead examiner (or board/AI) reviews. Final decision documented and binding.</p>
+
+            <h4 style="margin-top:8px">8.2 Execution Disputes</h4>
+            <p>Competing implementations reviewed for quality and scalability. Chosen solution published with explanation. Non-chosen contributors may get recognition credits.</p>
+
+            <h4 style="margin-top:8px">8.3 Idea Ownership</h4>
+            <p>Ideas become agency property on submission; authors always receive credit + 30% share if implemented.</p>
+
+            <h4 style="margin-top:8px">8.4 Transparency & Records</h4>
+            <p>All steps are logged. Each partner can see their contribution history.</p>
+
+            <h4 style="margin-top:8px">8.5 Code of Collaboration</h4>
+            <p>Be respectful. No sabotage or personal attacks. Violations may lead to removal.</p>
+          </div>
+        </section>
+
+        <footer>
+          <div>Myriad Evo — Built to iterate. &nbsp; | &nbsp; <small style="color:var(--muted)">Handbook v0.1</small></div>
+          <div style="color:var(--muted)">Tips: Use the search box, or keyboard arrows to jump sections.</div>
+        </footer>
+      </article>
+    </div>
+  </div>
+
+  <script>
+    // Basic interactivity: TOC navigation, search, copy, export, print
+    const sections = Array.from(document.querySelectorAll('article section'));
+    const tocButtons = Array.from(document.querySelectorAll('.toc button'));
+    const q = document.getElementById('q');
+
+    function setActive(id){
+      tocButtons.forEach(b=>b.classList.toggle('active', b.dataset.id===id));
+      const el = document.getElementById(id);
+      if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    tocButtons.forEach(b=>b.addEventListener('click', ()=>setActive(b.dataset.id)));
+    document.addEventListener('keydown', e=>{
+      if(e.key==='ArrowDown' || e.key==='ArrowUp'){
+        e.preventDefault();
+        const visible = sections.map(s=>s.id);
+        const idx = visible.indexOf(document.activeElement?.closest('section')?.id || visible[0]);
+        const next = e.key==='ArrowDown' ? Math.min(visible.length-1, idx+1) : Math.max(0, idx-1);
+        setActive(visible[next]);
+      }
+    });
+
+    q.addEventListener('input', ()=>{
+      const v = q.value.toLowerCase();
+      sections.forEach(s=>{
+        const match = s.innerText.toLowerCase().includes(v);
+        s.style.display = match? 'block':'none';
+      });
+    });
+
+    document.getElementById('btnPrint').addEventListener('click', ()=>window.print());
+
+    document.getElementById('btnCopy').addEventListener('click', async ()=>{
+      const text = document.getElementById('content').innerText;
+      try{ await navigator.clipboard.writeText(text); alert('Handbook copied to clipboard'); }catch(e){ alert('Copy failed — select and copy manually.'); }
+    });
+
+    document.getElementById('btnExport').addEventListener('click', ()=>{
+      const data = {title:document.querySelector('h1').innerText, sections: {}};
+      sections.forEach(s=> data.sections[s.id]=s.innerText.trim());
+      const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download='myriad-evo-handbook.json'; a.click(); URL.revokeObjectURL(url);
+    });
+
+  </script>
+</body>
+</html>
